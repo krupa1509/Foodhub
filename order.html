@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODHUB | Order</title>
+    <!-- aos css cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <a href="#" class="logo"><img src="images/logo-img.png" alt="" /></a>
+      <div id="menu-bar" class="fas fa-hamburger"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="menu.html">menu</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="order.html" class="active">order</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Order Now -->
+    <section class="container-fluid mt-5" id="order">
+      <h1 class="heading">make an <span>order</span></h1>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="table-responsive">
+            <table id="myTable" class="table">
+              <thead>
+                <tr>
+                  <th>Dish</th>
+                  <th>Name</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th class="text-right">
+                    <span id="amount" class="amount">Amount</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="product-img">
+                      <div class="img-prdct">
+                        <img src="images/product-1.jpg" height="200px" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Crispy Chicken Patties</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="button" value="+">
+                        +
+                      </button>
+                      <input
+                        type="text"
+                        name="qty"
+                        min="0"
+                        class="qty form-control"
+                        value="0"
+                      />
+                      <button class="cart-qty-minus" type="button" value="-">
+                        -
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      value="20"
+                      class="price form-control"
+                      disabled
+                    />
+                  </td>
+                  <td align="right">
+                    $ <span id="amount" class="amount">0</span>
+                  </td>
+                </tr>
+                <!---- add more tr  ---------->
+                <tr>
+                  <td>
+                    <div class="product-img">
+                      <div class="img-prdct">
+                        <img src="images/product-2.jpg" height="200px" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Mocktails</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="button" value="+">
+                        +
+                      </button>
+                      <input
+                        type="text"
+                        name="qty"
+                        min="0"
+                        class="qty form-control"
+                        value="0"
+                      />
+                      <button class="cart-qty-minus" type="button" value="-">
+                        -
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      value="10"
+                      class="price form-control"
+                      disabled
+                    />
+                  </td>
+                  <td align="right">
+                    $ <span id="amount" class="amount">0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-img">
+                      <div class="img-prdct">
+                        <img src="images/product-3.jpg" height="200px" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Ultimate Veggie Wrap</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="button" value="+">
+                        +
+                      </button>
+                      <input
+                        type="text"
+                        name="qty"
+                        min="0"
+                        class="qty form-control"
+                        value="0"
+                      />
+                      <button class="cart-qty-minus" type="button" value="-">
+                        -
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      value="25"
+                      class="price form-control"
+                      disabled
+                    />
+                  </td>
+                  <td align="right">
+                    $ <span id="amount" class="amount">0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="product-img">
+                      <div class="img-prdct">
+                        <img src="images/product-4.jpg" height="200px" alt="" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Noodles</p>
+                  </td>
+                  <td>
+                    <div class="button-container">
+                      <button class="cart-qty-plus" type="button" value="+">
+                        +
+                      </button>
+                      <input
+                        type="text"
+                        name="qty"
+                        min="0"
+                        class="qty form-control"
+                        value="0"
+                      />
+                      <button class="cart-qty-minus" type="button" value="-">
+                        -
+                      </button>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      value="14"
+                      class="price form-control"
+                      disabled
+                    />
+                  </td>
+                  <td align="right">
+                    $ <span id="amount" class="amount">0</span>
+                  </td>
+                </tr>
+                <!-- inside here -->
+                <!---- add more tr  ---------->
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4"></td>
+                  <td align="right">
+                    <strong
+                      >TOTAL = $ <span id="total" class="total">0</span>
+                    </strong>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- order food -->
+
+    <!-- contact section starts  -->
+    <section class="order" id="order">
+      <h1 class="heading"><span>Contact </span>Us</h1>
+      <div class="row">
+        <form action="" data-aos="fade-right">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="your name"
+            class="box"
+          />
+          <span>&nbsp;</span><br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="your email"
+            class="box"
+          />
+          <span>&nbsp;</span><br />
+          <input
+            type="text"
+            placeholder="your number"
+            name="phone"
+            id="phone"
+            class="box"
+          />
+          <span>&nbsp;</span><br />
+          <textarea
+            name="address"
+            id="address"
+            cols="20"
+            rows="5"
+            class="box address"
+            placeholder="your address"
+          ></textarea>
+          <span>&nbsp;</span><br />
+          <input type="submit" value="order now" id="order-now" class="btn" />
+        </form>
+
+        <div class="image" data-aos="fade-left">
+          <img src="images/form-img.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> mumbai, indai 400104</p>
+          <p><i class="fas fa-envelope"></i> example@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +123-456-7890</p>
+          <p><i class="fas fa-phone"></i> +111-222-333</p>
+        </div>
+        <div class="box">
+          <h3>branch location</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html">home</a>
+          <a href="about.html">about</a>
+          <a href="menu.html">menu</a>
+          <a href="gallery.html">gallery</a>
+          <a href="order.html">order</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">instagram</a>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+      <h1 class="credit">
+        created by <a href="#">Krupa, Mishan and Hardik </a> all rights
+        reserved.
+      </h1>
+    </div>
+    <!-- footer section ends -->
+
+    <!-- aos js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom js file link  -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Chef 3D hover link -->
+    <script src="js/hover_plugin/jquery.hover3d.js"></script>
+    <!-- gallery js file -->
+    <script src="js/gallery_plugin/gallery.js"></script>
+    <!-- order -->
+    <script src="js/order-now.js"></script>
+    <script src="js/script.js"></script>
+    <!-- initializing aos  -->
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODHUB | About</title>
+    <!-- aos css cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <a href="#" class="logo"><img src="images/logo-img.png" alt="" /></a>
+      <div id="menu-bar" class="fas fa-hamburger"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html" class="active">about</a></li>
+          <li><a href="menu.html">menu</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="order.html">order</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- about corosal section starts -->
+    <section class="about-corosal">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="images/banner1-01.png"
+            style="width: 100%; border-radius: 20px"
+          />
+          <div class="text">Our Offer</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="images/banner2-01.png"
+            style="width: 100%; border-radius: 20px"
+          />
+          <div class="text">Tasty Lunch</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+    <!-- about corosal section ends  -->
+
+    <!-- about section starts  -->
+    <section class="about" id="about">
+      <div class="image" data-aos="fade-right"></div>
+      <div class="content" data-aos="fade-left">
+        <h3>a word about us</h3>
+        <p>
+          Since our beginnings Foodhub's passion has been to offer fresh food by
+          using quality ingredients. Originally based out of Canada, our strong
+          customer base has allowed us to open in various parts of country like
+          India, United States of America. All preparations are made from
+          scratch daily and dishes are cooked to order. We use the freshest and
+          highest quality ingredients. To our fellow and honorary Canadians, we
+          hope you are reminded of home each time you eat at Foodhub. As for our
+          first time visitors, we welcome you and promise to expand your palate
+          with some of our favorite Canadian foods.
+        </p>
+        <a href="#"><button class="btn">learn more</button></a>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- Chef section -->
+
+    <div class="chef-wrapper">
+      <div class="chef-section-header">
+        <h2>Our Team</h2>
+        <div class="chef-line"></div>
+        <p>Meet Our Expert Chefs</p>
+      </div>
+    </div>
+
+    <div class="chef-card-wrapper">
+      <div class="chef-project">
+        <div class="chef-project__card">
+          <a href="" class="chef-project__image"
+            ><img src="images/chef-1.jpg" width="400" height="300" alt=""
+          /></a>
+          <div class="chef-project__detail">
+            <h2 class="chef-project__title"><a href="#">John Deo</a></h2>
+            <small class="chef-project__category"
+              ><a href="#">Head Chef</a></small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="chef-project">
+        <div class="chef-project__card">
+          <a href="" class="chef-project__image"
+            ><img src="images/chef-2.jpg" width="400" height="300" alt=""
+          /></a>
+          <div class="chef-project__detail">
+            <h2 class="chef-project__title"><a href="#">ALex Turner</a></h2>
+            <small class="chef-project__category"
+              ><a href="#">Head Chef</a></small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="chef-project">
+        <div class="chef-project__card">
+          <a href="" class="chef-project__image"
+            ><img src="images/chef-3.jpg" width="400" height="300" alt=""
+          /></a>
+          <div class="chef-project__detail">
+            <h2 class="chef-project__title"><a href="#">Tim Cook</a></h2>
+            <small class="chef-project__category"
+              ><a href="#">Head Chef</a></small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End chef section -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- faq -->
+    <section class="faq">
+      <h1 class="heading">Know <span>FAQs</span></h1>
+      <br />
+      <br />
+      <button class="accordion">How will I receive my online orders?</button>
+      <div class="panel">
+        <div class="image" data-aos="fade-left">
+          <!-- <img src="images/menu1.jpg" id="menu-img" alt="" /> -->
+        </div>
+        <p>
+          You can receive new orders any number of ways: You can receive a phone
+          call (it’s an automated phone call), an email or fax, or any
+          combination of these.
+        </p>
+        <br />
+      </div>
+
+      <button class="accordion">Do you have a delivery fee?</button>
+      <div class="panel">
+        <p>
+          Yes, our delivery fee varies depending on the locations mostly it
+          would be $3.99 delivery fee and also it might differ.
+        </p>
+      </div>
+
+      <button class="accordion">How do I pay for my order?</button>
+      <div class="panel">
+        <p>
+          Fill in the payment section with your credit card information at
+          checkout. You can save your credit card to speed up your checkout
+          process for future ordersWe accept all major credit cards including
+          Visa, MasterCard, and American Express.
+        </p>
+      </div>
+    </section>
+
+    <!-- footer section starts  -->
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 100 Queen Street N N2H2H6</p>
+          <p><i class="fas fa-envelope"></i> Mishan@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +1(266)-899-4813</p>
+          <p><i class="fas fa-phone"></i> +1(111)-222-3333</p>
+        </div>
+        <div class="box">
+          <h3>branch location</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">Canada</a>
+          <a href="#"></a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html">home</a>
+          <a href="about.html">about</a>
+          <a href="menu.html">menu</a>
+          <a href="gallery.html">gallery</a>
+          <a href="order.html">order</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">instagram</a>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+      <h1 class="credit">
+        created by <a href="#">Krupa, Mishan and Hardik </a> all rights
+        reserved.
+      </h1>
+    </div>
+    <!-- footer section ends -->
+
+    <!-- aos js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Chef 3D hover link -->
+    <script src="js/hover_plugin/jquery.hover3d.js"></script>
+    <!-- custom js file link  -->
+    <script src="js/slider_plugin/slider.js"></script>
+    <!-- gallery js file -->
+    <script src="js/gallery_plugin/gallery.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>
